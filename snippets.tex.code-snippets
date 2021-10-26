@@ -1,0 +1,103 @@
+{
+	// Place your latex workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"Basic starter": {
+		"prefix": "basic",
+		"body": [
+		  "\\documentclass[a4paper, 12pt]{article}",
+		  "\\setlength{\\headheight}{20pt}",
+		  "\\usepackage{amsmath,amssymb,amsfonts,color,float,graphicx}",
+		  "\\usepackage{fancyhdr}",
+		  "\\usepackage{lastpage}",
+		  "\\usepackage[top=1in,left=0.75in,bottom=1in,right=0.75in]{geometry}",
+		  "\\parindent 0px",
+		  "\\pagestyle{fancy}",
+		  "\\fancyhead{}",
+		  "\\fancyfoot{}",
+		  "\\fancyhead[L]{\\textbf{\\MakeUppercase{${1:course}}}}",
+		  "\\fancyhead[R]{\\slshape \\MakeUppercase{${2:name}}}",
+		  "\\fancyfoot[C]{Page \\color{blue}\\thepage\\ \\color{black}of \\pageref{LastPage}}",
+		  "\\begin{document}",
+		  "\\begin{titlepage}",
+		  "    \\vspace*{1cm}",
+		  "    \\begin{center}",
+		  "        \\vfill",
+		  "        \\line(1,0){\\textwidth}\\\\\\[5mm]",
+		  "        \\Large \\textbf{Assignment ${3:assignment-no}}\\\\\\[1mm]",
+		  "        \\Large \\textbf{- Set ${4:set} -}\\\\\\[1mm]",
+		  "        \\line(1,0){\\textwidth}",
+		  "        \\vfill",
+		  "        Name : ${5:fullname}\\\\\\",
+		  "        Student ID : ${6:id}\\\\\\",
+		  "        Section : ${7:section}",
+		  "    \\end{center}",
+		  "\\end{titlepage}",
+		  "$0",
+		  "\\end{document}"
+		],
+		"description": "Basic starter latex code"
+	  },
+	"Overwrite align": {
+		"scope": "latex",
+		"prefix": "\\\\",
+		"body":[
+			"\\\\\\",
+			"$0"
+		],
+		"description": "Overwrite align"
+	},
+	"Overwrite ddot": {
+		"scope": "latex",
+		"prefix": ":",
+		"body":[
+			":",
+			"$0"
+		],
+		"description": "Overwrite ddot"
+	},
+	"PD of 1st order": {
+		"prefix": "pd1",
+		"body": [
+		  "\\frac{\\partial ${1:f}}{\\partial ${2:x}}$0"
+		],
+		"description": "First order partial differentiation"
+	  },
+	"PD of 2nd order wrt 1 var": {
+		"prefix": "pd21",
+		"body": [
+		  "\\frac{\\partial^2 ${1:f}}{\\partial ${2:x}^2}$0"
+		],
+		"description": "Second order partial differentiation with respect to one variable"
+	  },
+	"PD of 2nd order wrt 2 vars": {
+		"prefix": "pd22",
+		"body": [
+		  "\\frac{\\partial^2 ${1:f}}{\\partial ${2:x}\\partial ${3:y}}$0"
+		],
+		"description": "Second order partial differentiation with respect to two variables"
+	  },
+	"Vector": {
+		"prefix": "vect",
+		"body": [
+		  "${1:V}_x\\hat{i}+${1:V}_y\\hat{j}+${1:V}_z\\hat{k}"
+		],
+		"description": "Generalized vector"
+	  },
+	"You have been nablaed": {
+		"prefix": "nabl",
+		"body": [
+		  "\\frac{\\partial ${1}}{\\partial x}\\hat{i}+\\frac{\\partial ${1}}{\\partial y}\\hat{j}+\\frac{\\partial ${1}}{\\partial z}\\hat{k}"
+		],
+		"description": "You have been nablaed"
+	  },
+	"Highlight":{
+		"prefix":"qs",
+		"body":"\\textbf{\\underline{$1}}$0",
+		"description": "Highlight your texxt"
+	}
+}

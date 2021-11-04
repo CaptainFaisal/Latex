@@ -112,6 +112,7 @@
 		"\t\\end{tabular}",
 		"\\end{table}",
 		"$0"
-		]
+		],
+		"description": "A snippet for creating table"
 	}
 }

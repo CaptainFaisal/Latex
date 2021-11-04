@@ -99,5 +99,19 @@
 		"prefix":"qs",
 		"body":"\\textbf{\\underline{$1}}$0",
 		"description": "Highlight your texxt"
+	},
+	"Table":{
+		"prefix": "table",
+		"body": [
+		"\\begin{table}[H]",
+		"\\centering",
+		"\t\\begin{tabular}{|c|c|$1}",
+		"\t\t\\hline",
+		"\t\ta&b$2\\\\\\",
+		"\t\t\\hline",
+		"\t\\end{tabular}",
+		"\\end{table}",
+		"$0"
+		]
 	}
 }

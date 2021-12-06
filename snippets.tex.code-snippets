@@ -27,6 +27,8 @@
 		  "    \\vspace*{1cm}",
 		  "    \\begin{center}",
 		  "        \\vfill",
+		  "        \\Huge{Title}",
+		  "        \\vfill",
 		  "        \\rule{\\textwidth}{0.1mm}\\\\\\",
 		  "        \\Large \\textbf{Assignment ${3:assignment-no}}\\\\\\[1mm]",
 		  "        \\Large \\textbf{- Set ${4:set} -}\\\\\\[1mm]",

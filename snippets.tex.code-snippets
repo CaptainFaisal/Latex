@@ -31,7 +31,7 @@
 		  "        \\vfill",
 		  "        \\rule{\\textwidth}{0.1mm}\\\\\\",
 		  "        \\Large \\textbf{Assignment ${4:assignment-no}}\\\\\\[1mm]",
-		  "        \\Large \\textbf{- Set ${5:set} -}\\\\\\[1mm]",
+		  "        \\Large \\textbf{- Set ${5:set} -}\\\\\\[-2mm]",
 		  "        \\rule{\\textwidth}{0.1mm}\\\\\\",
 		  "        \\vfill",
 		  "        Name : ${6:fullname}\\\\\\",
